@@ -1,13 +1,18 @@
+
+# Project Title
+
+A brief description of what this project does and who it's for
+
 🧠 Project Management Backend 
 Backend API para una plataforma de gestión de proyectos, desarrollada con NestJS, Sequelize, PostgreSQL y Docker. 
 🚀 Tecnologías 
-NestJS
-Sequelize ORM
-PostgreSQL
-Docker + Docker Compose
-Swagger
-Validaciones con class-validator
-Seeds con datos de prueba 
+* NestJS
+* Sequelize ORM
+* PostgreSQL
+* Docker
+* Swagger
+* Validaciones con class-validator
+* Seeds con datos de prueba 
 🛠️ Instalación y ejecución 
 📦 Requisitos 
 Docker
@@ -26,27 +31,28 @@ PostgreSQL en localhost:5432
 
 📚 Endpoints principales 
 🔐 Users 
-GET /users – Listar usuarios
+* GET /users – Listar usuarios
 📁 Projects 
-POST /projects – Crear proyecto
-GET /projects – Listar proyectos con paginación y búsquedaGET /projects/:id – Obtener proyecto por ID
-PUT /projects/:id – Actualizar proyecto
-DELETE /projects/:id – Eliminar proyecto 
+* POST /projects – Crear proyecto
+* GET /projects – Listar proyectos con paginación y búsquedaGET /projects/:id 
+> > Obtener proyecto por ID
+* PUT /projects/:id – Actualizar proyecto
+* DELETE /projects/:id – Eliminar proyecto 
 🔎 Filtro de búsqueda y paginación 
-GET /projects?page=1&limit=10&search=crm 
-page: número de página
-limit: resultados por página
-search: término parcial para buscar por nombre de proyecto 
+* GET /projects?page=1&limit=10&search=crm 
+    1. page: número de página
+    2. limit: resultados por página
+    3. search: término parcial para buscar por nombre de proyecto
 🧪 Casos de uso 
 ✅ Crear un proyecto con PM y usuarios asignados 
 POST /projects
-{
+` {
 "name": "Proyecto NestJS",
 "description": "Backend con Sequelize",
 "status": "enabled",
 "projectManagerId": "uuid-pm",
 "assignedUserIds": ["uuid-user1", "uuid-user2", "uuid-pm"]
-}
+}`
 
 🧭 Documentación Swagger 
 Disponible en: 
